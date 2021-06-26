@@ -1,0 +1,68 @@
+.header
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: $header-height
+  background-color: $black
+  background-image: $header-image
+  color: $white
+  display: flex
+  justify-content: space-between
+  align-items: center
+  z-index: 1000
+  &__icons
+    i
+      margin-right: 25px
+      font-size: 20px
+  &__home
+    display: flex
+    align-self: stretch
+    align-items: center
+    padding: $default-padding+5 $default-padding $default-padding+5 $default-padding
+  &__logo
+    margin: 0
+    height: 55px
+    width: 55px
+    color: $white
+    font-weight: $font-weight-bold
+  &__breadcrumb 
+    flex-grow: 1
+    display: flex
+    align-items: center
+    list-style: none
+    margin: 0
+    padding-left: 0
+    &__item 
+	    padding: 0
+	    position: relative
+    &__button,  &__button:hover
+      border: none
+      background-color: transparent
+      color: $white
+  &__breadcrumb li:first-child 
+	  padding-left: 0
+  &__breadcrumb li:last-child 
+	  padding-right: 0
+  &__breadcrumb li:last-child:after 
+	  content: none
+  &__breadcrumb__item
+    &__content
+      color: $white
+      font-weight: 600
+      height: $header-height
+      padding: $default-padding + 5
+      font-size: $default-font-size
+    &__add
+      height: 25px
+      font-size: $default-font-size
+      width: 25px
+      border-radius: 2px
+      background-color: $light-grey
+      color: $black
+      display: flex
+      align-items: center
+      justify-content: center
+.header__breadcrumb__item
+  margin: 0 10px
+  cursor: pointer

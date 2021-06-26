@@ -1,0 +1,10 @@
+type Block {
+  hash: String!
+  block_index: Int!
+  time: Int!
+  height: Int!
+}
+
+extend type Query {
+  getAllBlocks(time: Int!): [Block]!
+}

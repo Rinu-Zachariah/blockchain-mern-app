@@ -1,0 +1,31 @@
+.ant
+  &-pagination
+    &-item
+      &:hover, &-active, &-link
+        color: $primary-color !important
+        border-color: $primary-color !important
+        a
+          color: $primary-color !important
+      &-link
+        &:hover
+          color: $primary-color !important
+
+  &-table
+    &-thead
+      th
+        background: $primary-table-heading !important
+        color: $white !important
+        font-weight: 800 !important
+        font-size: 15px !important
+        border: 1px solid $primary-table-heading !important
+        border-radius: 0 !important
+    &-container
+      margin-top: $default-margin + 5
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    &-content
+      border-left: 3px solid $primary-color
+      border-bottom: 3px solid $primary-color
+      
+.blocks
+  &__actions
+    color: $primary-color
